@@ -270,70 +270,95 @@ while true {
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Day 5
-func printHelp() {
-    let message = """
-Welcome to MyApp!
-
-Run this app inside a directory of images and
-MyApp will resize them all into thumbnails
-"""
-    
-    print(message)
-}
-printHelp()
-func doNothing() { }
-doNothing()
-
-func square(number: Int) -> Int {
-    return number * number
-}
-let result = square(number: 8)
-print(result)
-func greet(name: String) -> String {
-    name == "Taylor Swift" ? "Oh wow!" : "Hello, \(name)"
-}
-greet(name: "Cezao")
-func getUser() -> (first: String, last: String) {
-    (first: "Taylor", last: "Swift")
-}
-let user = getUser()
-print(user.last)
-
-func sayHello(to name: String) {
-    print("Hello, \(name)!")
-}
-sayHello(to: "Pey")
-
-func greet(_ person: String, nicely: Bool = true) {
-    if nicely == true {
-        print("Hello, \(person)")
-    } else {
-        print("Oh no, it`s \(person) again")
-    }
-}
-greet("Cezao")
-greet("Cezao", nicely: false)
-
-func square(_ numbers: Int...) {
-    for number in numbers {
-        print("\(number) squared is \(number * number)")
-    }
-}
-square(1, 2, 3, 4, 5, 6, 7)
-
-enum PasswordError: Error {
-    case obvious
-}
-func checkPassword(_ password: String) throws -> Bool {
-    if password == "password" {
-        throw PasswordError.obvious
-    }
-    return true
-}
-
-do {
-    try checkPassword("password")
-    print("That password is good")
-} catch {
-    print("You can`t use that password")
-}
+//func printHelp() {
+//    let message = """
+//Welcome to MyApp!
+//
+//Run this app inside a directory of images and
+//MyApp will resize them all into thumbnails
+//"""
+//
+//    print(message)
+//}
+//printHelp()
+//func doNothing() { }
+//doNothing()
+//
+//func square(number: Int) -> Int {
+//    return number * number
+//}
+//let result = square(number: 8)
+//print(result)
+//func greet(name: String) -> String {
+//    name == "Taylor Swift" ? "Oh wow!" : "Hello, \(name)"
+//}
+//greet(name: "Cezao")
+//func getUser() -> (first: String, last: String) {
+//    (first: "Taylor", last: "Swift")
+//}
+//let user = getUser()
+//print(user.last)
+//
+//func sayHello(to name: String) {
+//    print("Hello, \(name)!")
+//}
+//sayHello(to: "Pey")
+//
+//func greet(_ person: String, nicely: Bool = true) {
+//    if nicely == true {
+//        print("Hello, \(person)")
+//    } else {
+//        print("Oh no, it`s \(person) again")
+//    }
+//}
+//greet("Cezao")
+//greet("Cezao", nicely: false)
+//
+//func square(_ numbers: Int...) {
+//    for number in numbers {
+//        print("\(number) squared is \(number * number)")
+//    }
+//}
+//square(1, 2, 3, 4, 5, 6, 7)
+//
+//enum PasswordError: Error {
+//    case obvious
+//}
+//func checkPassword(_ password: String) throws -> Bool {
+//    if password == "password" {
+//        throw PasswordError.obvious
+//    }
+//    return true
+//}
+//
+//do {
+//    try checkPassword("password")
+//    print("That password is good")
+//} catch {
+//    print("You can`t use that password")
+//}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Day 6
+//let driving = {
+//    print("I'm driving in my car")
+//}
+//driving()
+//
+//let drivingWithReturn = { (place: String) -> String in
+//    return "I'm going to \(place) in my car"
+//}
+//let message = drivingWithReturn("London")
+//print(message)
+//
+//func travel(action: () -> Void) {
+//    print("I'm getting ready to go,.")
+//    action()
+//    print("I arrived")
+//}
+//travel(action: driving)
+//
+//travel {
+//    print("i'm driving my car   ")
+//}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Day 7
