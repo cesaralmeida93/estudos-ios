@@ -546,3 +546,103 @@ import UIKit
 //    person.printGreeting()
 //}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Day 11
+//protocol Identifiable {
+//    var id: String {get set}
+//}
+//struct User: Identifiable {
+//    var id: String
+//}
+//func displayID(thing: Identifiable) {
+//    print("My ID is \(thing.id)")
+//}
+//
+//protocol Purchaseable {
+//    var name: String {get set}
+//}
+//
+//struct Book: Purchaseable {
+//    var name: String
+//    var author: String
+//}
+//
+//struct Movie: Purchaseable {
+//    var name: String
+//    var actors: [String]
+//}
+//
+//struct Car: Purchaseable {
+//    var name: String
+//    var manufacturer: String
+//}
+//
+//struct Coffee: Purchaseable {
+//    var name: String
+//    var strength: Int
+//}
+//
+//func buy(_ item: Purchaseable) {
+//    print("I'm buying \(item.name)")
+//}
+//
+//protocol Payable {
+//    func calculateWages() -> Int
+//}
+//
+//protocol NeedsTraining {
+//    func study()
+//}
+//
+//protocol HasVacation {
+//    func takeVacation(days: Int)
+//}
+//
+//protocol Employee: Payable, NeedsTraining, HasVacation {}
+//
+//extension Int {
+//    func squared() -> Int {
+//        return self * self
+//    }
+//    var isEven: Bool {
+//        return self % 2 == 0
+//    }
+//}
+//
+//let number = 8
+//number.squared()
+//number.isEven
+
+//let pythons = ["Eric", "Grahan", "John", "Michael", "Terry", "Terry"]
+//let beatles = (["John", "Paul", "George", "Ringo"])
+//
+//extension Collection {
+//    func summarize() {
+//        print("There are \(count) of us:")
+//
+//        for name in self {
+//            print(name)
+//        }
+//    }
+//}
+//
+//pythons.summarize()
+//beatles.summarize()
+//
+//protocol Identifiable {
+//    var id: String {get set}
+//    func identity()
+//}
+//
+//extension Identifiable {
+//    func identity() {
+//        print("My ID is \(id).")
+//    }
+//}
+//
+//struct User: Identifiable {
+//    var id: String
+//}
+//
+//let twostraws = User(id: "twostraws")
+//twostraws.identity()
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
