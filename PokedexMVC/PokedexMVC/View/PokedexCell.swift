@@ -8,9 +8,15 @@
 
 import UIKit
 
+protocol PokedexCellDelegate {
+    func presentInfoView(withPokemon pokemon: Pokemon)
+}
+
 class PokedexCell: UICollectionViewCell {
     
     // MARK: - Properties
+    
+    var delegate: PokedexCellDelegate?
     
     var pokemon: Pokemon? {
         didSet {
@@ -57,7 +63,8 @@ class PokedexCell: UICollectionViewCell {
     
     @objc func handleLongPress(sender: UILongPressGestureRecognizer) {
         if sender.state == .began {
-            print("Long press did begin")
+            guard let pokemon = self.pokemon else {return}
+            delegate?.presentInfoView(withPokemon: pokemon)
         } 
     }
     
