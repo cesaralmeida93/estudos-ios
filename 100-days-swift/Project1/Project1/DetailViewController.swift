@@ -14,10 +14,14 @@ class DetailViewController: UIViewController {
     //@IBOutlet var imageView: UIView!
     var selectedImage: String?
     
+    var selectedPictureNumber = 0
+    var totalPictures = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = selectedImage
+        title = "\(selectedPictureNumber) of \(totalPictures)"
+
         
         if let imageToLoad = selectedImage {
             imageView.image = UIImage(named: imageToLoad)
