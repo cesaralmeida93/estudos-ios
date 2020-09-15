@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		141E17572508FDAC00C13764 /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141E17562508FDAC00C13764 /* PlayerDetailsViewController.swift */; };
+		141E175925090B7800C13764 /* GamePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141E175825090B7800C13764 /* GamePickerViewController.swift */; };
+		14BEDE7625067424006C279F /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BEDE7525067424006C279F /* PlayersViewController.swift */; };
+		14BEDE7825067B4D006C279F /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BEDE7725067B4D006C279F /* PlayerCell.swift */; };
 		5394F02521864DF5006E754C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5394F02321864DF4006E754C /* LaunchScreen.storyboard */; };
 		D2A5F2091F4A9144005CD714 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A5F2071F4A9144005CD714 /* Main.storyboard */; };
 		D2A5F20B1F4A9144005CD714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A5F20A1F4A9144005CD714 /* Assets.xcassets */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		141E17562508FDAC00C13764 /* PlayerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailsViewController.swift; sourceTree = "<group>"; };
+		141E175825090B7800C13764 /* GamePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePickerViewController.swift; sourceTree = "<group>"; };
+		14BEDE7525067424006C279F /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		14BEDE7725067B4D006C279F /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 		5394F02421864DF4006E754C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2A5F2001F4A9144005CD714 /* Ratings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ratings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A5F2081F4A9144005CD714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,6 +93,7 @@
 		F5C023542306E458001D7E33 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				14BEDE7725067B4D006C279F /* PlayerCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -92,6 +101,9 @@
 		F5C023592306F65C001D7E33 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				14BEDE7525067424006C279F /* PlayersViewController.swift */,
+				141E17562508FDAC00C13764 /* PlayerDetailsViewController.swift */,
+				141E175825090B7800C13764 /* GamePickerViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -176,9 +188,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				141E175925090B7800C13764 /* GamePickerViewController.swift in Sources */,
 				F54EFE4C2306DC5B00F04995 /* Player.swift in Sources */,
 				F54EFE542306DD7600F04995 /* GamesDataSource.swift in Sources */,
+				14BEDE7825067B4D006C279F /* PlayerCell.swift in Sources */,
+				141E17572508FDAC00C13764 /* PlayerDetailsViewController.swift in Sources */,
 				D2A5F2211F4A96D0005CD714 /* AppDelegate.swift in Sources */,
+				14BEDE7625067424006C279F /* PlayersViewController.swift in Sources */,
 				F54EFE522306DD6B00F04995 /* PlayersDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,7 +339,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Ratings/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,7 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Ratings/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
