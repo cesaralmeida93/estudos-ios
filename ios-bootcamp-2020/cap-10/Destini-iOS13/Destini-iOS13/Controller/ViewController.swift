@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     var storyBrain = StoryBrain()
     
-    override func viewDidLoad() {
+    override func  () {
         super.viewDidLoad()
         
         updateUI()
